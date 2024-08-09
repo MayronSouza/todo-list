@@ -1,8 +1,13 @@
+import Logo from '../assets/logo.png'
+
+import styles from './Header.module.css'
+
 export function Header() {
   return (
-    <header>
-      <img src="" alt="" />
-      <p><span>to</span>do</p>
+    <header className={styles.header}>
+      <div>
+        <img src={Logo} />
+      </div>
     </header>
   )
 }
