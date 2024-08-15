@@ -1,0 +1,43 @@
+.content {
+  width: 54vw;
+  margin: 72px 0 8px 0;
+
+}
+
+.content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 72px;
+  padding: 10px;
+
+  width: 100%;
+}
+
+.content hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--gray-300);
+}
+
+.content .tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1  0px;
+  width: 100%;
+}
+
+.content .tasks .empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  color: var(--gray-300);
+}
+
+.content .tasks .empty img {
+  margin-bottom : 24px;
+}

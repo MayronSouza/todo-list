@@ -3,6 +3,7 @@ import { Search } from "./components/Search"
 
 import styles from "./App.module.css"
 import "./global.css"
+import { Content } from "./components/Content"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <main className={styles.main}>
         <Search />
+        <Content />
       </main>
     </>
   )
