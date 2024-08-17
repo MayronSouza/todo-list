@@ -4,9 +4,14 @@ import { ITasks } from '../../App'
 
 interface ItemProps {
   data: ITasks
+  removeTask: (id: string) => void
 }
 
-export function Item({ data }: ItemProps) {
+export function Item({ data, removeTask }: ItemProps) {
+  function handleRemove() {
+    removeTask(data.id)
+  }
+
   return (
     <div className={styles.container}>
       <div>
@@ -19,7 +24,7 @@ export function Item({ data }: ItemProps) {
         </label>
       </div>
       
-      <button>
+      <button onClick={handleRemove}>
         <Trash size={16} color='#808080' />
       </button>
     </div>
