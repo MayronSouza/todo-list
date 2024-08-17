@@ -1,8 +1,11 @@
+import { PlusCircle } from "@phosphor-icons/react"
+
 import { Header } from "./components/List/Header"
+import { Input } from "./components/Input"
+import { Button } from "./components/Button"
 
 import styles from "./App.module.css"
 import "./global.css"
-import { Input } from "./components/Input"
 
 function App() {
   return (
@@ -11,6 +14,10 @@ function App() {
       <section className={styles.content}>
         <div className={styles.taskInfoContainer}>
           <Input />
+          <Button>
+            Criar
+            <PlusCircle size={16} color="#f2f2f2"/>
+          </Button>
         </div>
       </section>
     </main>
