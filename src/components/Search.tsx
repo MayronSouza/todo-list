@@ -3,7 +3,7 @@ import styles from './Search.module.css'
 
 export function Search() {
   return (
-    <div className={styles.search_wrapper}>
+    <form className={styles.search_wrapper}>
       <input type="text" />
       <div>
         <button className={styles.btn} type="button">
@@ -11,6 +11,6 @@ export function Search() {
           <img src={Plus} />
         </button>
       </div>
-    </div>
+    </form>
   )
 }

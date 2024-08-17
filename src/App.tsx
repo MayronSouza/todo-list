@@ -1,19 +1,18 @@
-import { Header } from "./components/Header"
-import { Search } from "./components/Search"
+import { Header } from "./components/List/Header"
 
 import styles from "./App.module.css"
 import "./global.css"
-import { Content } from "./components/Content"
 
 function App() {
   return (
-    <>
+    <main>
       <Header />
-      <main className={styles.main}>
-        <Search />
-        <Content />
-      </main>
-    </>
+      <section className={styles.content}>
+        <div className={styles.taskInfoContainer}>
+          
+        </div>
+      </section>
+    </main>
   )
 }
 
