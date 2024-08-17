@@ -7,6 +7,7 @@ import { Header as ListHeader } from './components/List/Header'
 
 import styles from "./App.module.css"
 import "./global.css"
+import { Item } from "./components/List/Item"
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </div>
         <div className={styles.taskList}>
           <ListHeader />
+        </div>
+        <div>
+          <Item />
         </div>
       </section>
     </main>
