@@ -6,8 +6,8 @@ import { Button } from "./components/Button"
 import { Header as ListHeader } from './components/List/Header'
 
 import styles from "./App.module.css"
-// import { Item } from "./components/List/Item"
-import { Empty } from "./components/List/Empty"
+import { Item } from "./components/List/Item"
+// import { Empty } from "./components/List/Empty"
 
 function App() {
   return (
@@ -25,8 +25,10 @@ function App() {
           <ListHeader />
         </div>
         <div>
-          {/* <Item /> */}
-          <Empty />
+          <Item />
+          <Item />
+          <Item />
+          {/* <Empty /> */}
         </div>
       </section>
     </main>

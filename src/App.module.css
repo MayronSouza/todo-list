@@ -1,7 +1,31 @@
-.main {
+.content {
+  max-width: 46rem;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.taskInfoContainer {
   display: flex;
-  justify-content: center;
-  align-items: start;
-  height: calc(100vh - 20px);
-  background-color: var(--gray-600);
+  flex: 1;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.taskInfoContainer input, .taskInfoContainer button {
+  transform: translateY(-50%);
+
+  margin-bottom: 2.3125rem;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.taskList > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
