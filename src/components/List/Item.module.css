@@ -6,6 +6,7 @@
   justify-content: space-between;
 
   padding: 1rem;
+  margin-top: 8px;
   border-radius: 8px;
 
   background-color: var(--gray-500);
@@ -35,6 +36,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.checkbox-unchecked {
+  border: 2px solid var(--blue);
+}
+
+.checkbox-unchecked:hover {
+  background-color: rgba(30, 11, 159, 0.2);
+}
+
+checkbox-checked {
+  border: 2px solid var(--purple-dark);
+  background-color: var(--purple-dark);
+}
+
+.checkbox-checked:hover {
+  border: 2px solid var(--purple);
+  background-color: var(--purple);
+}
+
+.paragraph {
+  font-size: 0.875rem;
+  line-height: 140%;
+  user-select: none;
+
+  transition: 0.2s all;
+}
+
+.paragraph-checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
 }
 
 .container button {
