@@ -10,6 +10,7 @@ import { Item } from "./components/List/Item"
 import { Empty } from './components/List/Empty'
 
 import styles from "./App.module.css"
+import { Footer } from "./components/Footer"
 
 export interface ITasks {
   id: string,
@@ -101,6 +102,7 @@ function App() {
           <Empty />
         )}
       </section>
+      <Footer />
     </main>
   )
 }
